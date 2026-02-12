@@ -2,11 +2,9 @@
 
 > personal portfolio with modular architecture, designed for GitHub Pages deployment.
 
-![Deploy Status](https://github.com/YOURUSERNAME/YOURREPO/actions/workflows/deploy.yml/badge.svg)
-
 ## 🌐 Live Demo
 
-**[https://YOURUSERNAME.github.io/YOURREPO](https://YOURUSERNAME.github.io/YOURREPO)**
+**[https://Narendra&25.github.io/narendra.engineer]([https://Narendra&25.github.io/narendra.engineer])**
 
 ---
 
@@ -71,7 +69,7 @@ portfolio/
 ### 1. Clone or fork this repository
 
 ```bash
-git clone https://github.com/YOURUSERNAME/YOURREPO.git
+git clone https://Narendra&25.github.io/narendra.engineer.git
 cd YOURREPO
 ```
 
@@ -115,13 +113,9 @@ Visit `http://localhost:3000`
 
 ### Your site URL will be:
 ```
-https://YOURUSERNAME.github.io/YOURREPO/
+https://Narendra&25.github.io/narendra.engineer
 ```
 
-Or if the repo is named `YOURUSERNAME.github.io`:
-```
-https://YOURUSERNAME.github.io/
-```
 
 ---
 
