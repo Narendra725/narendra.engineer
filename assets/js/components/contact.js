@@ -55,7 +55,7 @@ const Contact = (() => {
     });
     if (!res.ok) throw new Error('Submission failed');
     // Submission fallback
-    // return new Promise((resolve) => setTimeout(resolve, 600));
+    return new Promise((resolve) => setTimeout(resolve, 600));
   };
 
   const handleSubmit = async (e) => {
