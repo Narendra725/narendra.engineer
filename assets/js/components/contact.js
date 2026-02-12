@@ -70,7 +70,7 @@ const Contact = (() => {
     const isEmailValid   = validateField(emailInput);
     const isMessageValid = validateField(messageInput);
     const isPhoneValid = validateField(phoneInput);
-
+    alert("Submit working");
     if (!isNameValid || !isEmailValid || !isMessageValid || !isPhoneValid) {
       showStatus('Please fill in all required fields correctly.', 'error');
       return;
