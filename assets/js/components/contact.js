@@ -87,7 +87,8 @@ const Contact = (() => {
         name:    nameInput.value.trim(),
         email:   emailInput.value.trim(),
         message: messageInput.value.trim(),
-        phone: phoneInput.value.trim()
+        phone: phoneInput.value.trim(),
+        _subject : 'New Submission From Portfolio'
       });
 
       showStatus('✓ Message sent! I\'ll get back to you soon.', 'success');
