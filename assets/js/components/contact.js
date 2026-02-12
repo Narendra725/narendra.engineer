@@ -33,6 +33,10 @@ const Contact = (() => {
       input.classList.add('error');
       return false;
     }
+    if (input.type === 'tel' && !Utils.isValidPhone(val)) {
+      input.classList.add('error');
+      return false;
+    }
     input.classList.remove('error');
     return true;
   };
@@ -44,17 +48,13 @@ const Contact = (() => {
   const simulateSubmit = async (data) => {
     // ────────────────────────────────────────────
     // OPTION A — Formspree (recommended for GitHub Pages)
-    // const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    //   body: JSON.stringify(data),
-    // });
-    // if (!res.ok) throw new Error('Submission failed');
-    // ────────────────────────────────────────────
-    // OPTION B — EmailJS
-    // await emailjs.send('SERVICE_ID', 'TEMPLATE_ID', data);
-    // ────────────────────────────────────────────
-    // Simulation fallback
+    const res = await fetch('https://formspree.io/f/mlglqvra', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) throw new Error('Submission failed');
+    // Submission fallback
     return new Promise((resolve) => setTimeout(resolve, 1200));
   };
 
@@ -64,12 +64,14 @@ const Contact = (() => {
     const nameInput    = Utils.$('#name', form);
     const emailInput   = Utils.$('#email', form);
     const messageInput = Utils.$('#message', form);
+    const phoneInput = Utils.$('#phone',form);
 
     const isNameValid    = validateField(nameInput);
     const isEmailValid   = validateField(emailInput);
     const isMessageValid = validateField(messageInput);
+    const isPhoneValid = validateField(phoneInput);
 
-    if (!isNameValid || !isEmailValid || !isMessageValid) {
+    if (!isNameValid || !isEmailValid || !isMessageValid || !isPhoneValid) {
       showStatus('Please fill in all required fields correctly.', 'error');
       return;
     }
@@ -85,6 +87,7 @@ const Contact = (() => {
         name:    nameInput.value.trim(),
         email:   emailInput.value.trim(),
         message: messageInput.value.trim(),
+        phone: phoneInput.value.trim()
       });
 
       showStatus('✓ Message sent! I\'ll get back to you soon.', 'success');
