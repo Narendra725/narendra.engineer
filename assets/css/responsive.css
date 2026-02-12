@@ -21,7 +21,7 @@
   }
 
   /* Cursor hidden on touch */
-  .cursor-dot, .cursor-ring { display: none; }
+  /* .cursor-dot, .cursor-ring { display: none; } */
   body { cursor: default; }
   button, a { cursor: pointer; }
 
