@@ -182,4 +182,3 @@ MIT — feel free to use and customize for your own portfolio.
 
 ---
 
-<p align="center">Built with ✦ and clean code</p>
