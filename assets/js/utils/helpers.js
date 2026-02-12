@@ -50,6 +50,9 @@ const Utils = (() => {
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
+  const isValidPhone = (phone) => {
+  return /^(\+91[-\s]?)?[6-9]\d{9}$/.test(phone);
+  };
 
   /**
    * Safely query a single DOM element
