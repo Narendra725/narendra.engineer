@@ -79,7 +79,7 @@ const Utils = (() => {
     if (el) el.textContent = new Date().getFullYear();
   };
 
-  return { throttle, debounce, clamp, isValidEmail, $, $$, setYear };
+  return { throttle, debounce, clamp, isValidEmail,isValidPhone, $, $$, setYear };
 })();
 
 // Export for module use (if using a bundler)
