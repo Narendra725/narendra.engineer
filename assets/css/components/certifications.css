@@ -10,7 +10,7 @@
 }
 
 .certifications-card {
-  background: var(--color-surface);
+  background: url("https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg");
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-8);
