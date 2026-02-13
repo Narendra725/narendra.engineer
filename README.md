@@ -2,9 +2,9 @@
 
 > personal portfolio with modular architecture, designed for GitHub Pages deployment.
 
-## 🌐 Live Demo
+## 🌐 Live Site
 
-**[https://Narendra&25.github.io/narendra.engineer]([https://Narendra&25.github.io/narendra.engineer])**
+**[Portfolio](https://Narendra&25.github.io/narendra.engineer)**
 
 ---
 
@@ -47,12 +47,8 @@ portfolio/
 │
 ├── docs/
 │   ├── ARCHITECTURE.md         # System design decisions
-│   ├── DEPLOYMENT.md           # Step-by-step deployment guide
-│   └── CUSTOMIZATION.md        # How to update content
-│
-├── tests/                      # Future test files
-├── scripts/
-│   └── validate.sh             # Local validation script
+│   └── DEPLOYMENT.md           # Step-by-step deployment guide
+│  
 │
 ├── index.html                  # Main entry point
 ├── .gitignore
@@ -69,7 +65,7 @@ portfolio/
 ### 1. Clone or fork this repository
 
 ```bash
-git clone https://Narendra&25.github.io/narendra.engineer.git
+git clone https://Narendra725.github.io/narendra.engineer.git
 cd YOURREPO
 ```
 
@@ -77,7 +73,6 @@ cd YOURREPO
 
 Edit `index.html` — search for `Your Name`, `your@email.com`, `yourusername` and replace with your info.
 
-See [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) for a full guide.
 
 ### 3. Run locally
 
@@ -148,7 +143,6 @@ https://Narendra&25.github.io/narendra.engineer
 ## 📋 Features
 
 - **Zero dependencies** — pure HTML, CSS, JavaScript
-- **GitHub Actions CI/CD** — auto-deploys on every push to main
 - **Modular architecture** — each concern in its own file
 - **Performance** — throttled scroll handlers, IntersectionObserver
 - **Accessibility** — semantic HTML, ARIA labels, focus styles, `prefers-reduced-motion`
@@ -157,7 +151,7 @@ https://Narendra&25.github.io/narendra.engineer
 - **Scroll animations** — staggered reveal on scroll
 - **Animated skill bars** — trigger when visible
 - **Typewriter effect** — cycling phrases in hero
-- **Contact form** — client-side validation, ready for Formspree/EmailJS
+- **Contact form** — client-side validation, ready for Formspree
 
 ---
 
@@ -170,9 +164,6 @@ The form uses a `simulateSubmit()` placeholder. To make it real:
 2. Create a form, copy your Form ID
 3. In `assets/js/components/contact.js`, uncomment the Formspree block and add your ID
 
-**EmailJS:**
-1. Sign up at [emailjs.com](https://emailjs.com)
-2. Follow OPTION B comment in `contact.js`
 
 ---
 
