@@ -1,0 +1,37 @@
+/* ─── certifications ─── */
+.certifications { background: var(--color-bg-alt); }
+
+.certifications .section-title { margin-bottom: var(--space-12); }
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.certifications-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+
+.certifications-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: rgba(0, 255, 200, 0.25); }
+.certifications-card:hover::before { transform: scaleX(1); }
+
+
+.certifications-card:hover .card-title { color: var(--color-accent); }
+
