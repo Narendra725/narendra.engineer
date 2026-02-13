@@ -34,4 +34,24 @@
 
 
 .certifications-card:hover .card-title { color: var(--color-accent); }
+.badge-one {
+  background: url("https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg") top left no-repeat;
+  background-size: 80px;
+  background-position: 10% 0%;
+}
+.badge-two {
+  background: url("https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg") top left no-repeat;
+  background-size: 80px;
+  background-position: 10% 0%;
+}
+.badge-three {
+  background: url("assets/images/badge_2.png") top left no-repeat;
+  background-size: 80px;
+  background-position: 10% 0%;
+}
+.badge-four {
+  background: url("assets/images/badge_4.jpg") top left no-repeat;
+  background-size: 80px;
+  background-position: 10% 0%;
+}
 
