@@ -4,7 +4,7 @@
 
 ## 🌐 Live Site
 
-**[Portfolio](https://Narendra&25.github.io/narendra.engineer)**
+**[Portfolio](https://Narendra725.github.io/narendra.engineer)**
 
 ---
 
