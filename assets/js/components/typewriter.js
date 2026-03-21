@@ -7,10 +7,10 @@
 
 const Typewriter = (() => {
   const PHRASES = [
-    'Insightful Power BI Reports.',
-    'Scalable Analytics Systems.',
-    'Automated Data Pipelines.',
-    'Scalable & Smarter Data Solutions.'
+    "ETL Pipelines.",
+    "Microsoft Fabric Solutions.",
+    "Power BI Dashboards.",
+    "Scalable Data Architectures."
 
   ];
 
